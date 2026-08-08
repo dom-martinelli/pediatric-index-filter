@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pediatric-index-filter"
+version = "0.1.0"
+description = "Keep medical questions whose primary clinical subject is a pediatric patient; drop adult-with-childhood-history, maternal, and pedigree items."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Dominic Martinelli" }]
+keywords = ["pediatrics", "medical-qa", "benchmark", "dataset-curation", "nlp", "filter"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Topic :: Scientific/Engineering :: Medical Science Apps.",
+]
+dependencies = []
+
+[project.optional-dependencies]
+cli = ["pandas>=1.3"]
+dev = ["pytest>=7", "pandas>=1.3"]
+
+[project.scripts]
+pediatric-index-filter = "pediatric_index_filter.cli:main"
+
+[tool.setuptools]
+packages = ["pediatric_index_filter"]

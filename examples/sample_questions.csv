@@ -1,0 +1,13 @@
+id,question,expected_pediatric
+inc_school_age,"A 6-year-old boy is brought to his pediatrician for a well-child visit and immunizations.",True
+inc_neonate,"A 2-week-old infant presents with poor feeding, lethargy, and jaundice.",True
+inc_adolescent,"A 14-year-old girl is evaluated for short stature and delayed puberty.",True
+inc_child_emergency,"A child presents to the emergency department with fever and a petechial rash.",True
+inc_toddler,"A 3-year-old with recurrent otitis media is referred for audiology assessment.",True
+exc_childhood_history,"A 40-year-old man with a history of childhood asthma presents with progressive dyspnea.",False
+exc_pregnant_adult,"A 24-year-old woman, gravida 2 para 1, at 39 weeks' gestation presents in latent labor.",False
+exc_postpartum,"A 25-year-old woman develops palpitations and heat intolerance after delivering her child.",False
+exc_offspring_risk,"A couple who are both carriers ask about the risk of having children with cystic fibrosis.",False
+exc_adult_first,"A 55-year-old woman recalls that as a child she had rheumatic fever; she now has exertional dyspnea.",False
+gap_no_context,"What is the most common cause of renal artery stenosis in a child?",False
+gap_neonate_maternal,"A newborn male born to a 36-year-old gravida 3 mother develops respiratory distress shortly after birth.",False
